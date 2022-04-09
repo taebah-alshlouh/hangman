@@ -1,6 +1,6 @@
 "use strict";
 ///////////////////the words//////////////////
-var programming_languages = [
+var animals = [
 	"cat",
 	"dog",
 	"elephant",
@@ -25,7 +25,7 @@ let wordStatus = null;
 
 /////////////////random words////////////////////
 function randomWord() {
-  answer = programming_languages[Math.floor(Math.random() * programming_languages.length)];
+  answer = animals[Math.floor(Math.random() * animals.length)];
 }
 //////////////////the buttons/////////////////////////////
 function generateButtons() {
