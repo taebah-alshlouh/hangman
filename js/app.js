@@ -1,18 +1,20 @@
+"use strict";
+///////////////////the words//////////////////
 var programming_languages = [
-	"python",
-	"javascript",
-	"mongodb",
-	"json",
-	"java",
-	"html",
-	"css",
-	"c",
-	"csharp",
-	"golang",
-	"kotlin",
-	"php",
-	"sql",
-	"ruby"
+	"cat",
+	"dog",
+	"elephant",
+	"duck",
+	"tiger",
+	"lion",
+	"deer",
+	"dove",
+	"fox",
+	"goose",
+	"horse",
+	"kangaroo",
+	"penguin",
+	"rabbit"
 ]
 
 let answer = '';
@@ -21,15 +23,16 @@ let mistakes = 0;
 let guessed = [];
 let wordStatus = null;
 
+/////////////////random words////////////////////
 function randomWord() {
   answer = programming_languages[Math.floor(Math.random() * programming_languages.length)];
 }
-
+//////////////////the buttons/////////////////////////////
 function generateButtons() {
   let buttonsHTML = 'abcdefghijklmnopqrstuvwxyz'.split('').map(letter =>
     `
       <button
-        class="btn btn-lg btn-primary m-2"
+        class="btn btn-m m-2"
         id='` + letter + `'
         onClick="handleGuess('` + letter + `')"
       >
@@ -54,7 +57,7 @@ function handleGuess(chosenLetter) {
     updateHangmanPicture();
   }
 }
-
+////////////////////show the pic when the ans wrong//////////////////////
 function updateHangmanPicture() {
   document.getElementById('hangmanPic').src = './images/' + mistakes + '.png';
 }
@@ -81,7 +84,7 @@ function guessedWord() {
 function updateMistakes() {
   document.getElementById('mistakes').innerHTML = mistakes;
 }
-
+/////////////////////reset the game///////////////////////
 function reset() {
   mistakes = 0;
   guessed = [];

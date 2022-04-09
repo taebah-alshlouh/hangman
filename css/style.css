@@ -1,8 +1,46 @@
+*{
+  font-family:'Lucida Sans Unicode',Verdana, sans-serif;
+}
+body{
+  margin-top: 2%;
+}
+.text-center{
+  color: #8D8DAA;
+}
+.float-right{
+  color:  #8D8DAA;
+  font-size: 1.8vw;
+}
 #hangmanPic{
-  width: 15vw !important;
-  height: 25vh !important;
+  width: 20vw !important;
+  height:35vh !important;
 }
 .m-2 {
-  background-color: thistle !important;
+  color: white;
+  background-color: #8D8DAA !important;
   border: 1px solid white !important;
+}
+#par{
+  color:  #8D8DAA;
+  font-size: 2vw;
+}
+#wordSpotlight{
+  color: #24A19C;
+  font-size: 2vw;
+}
+#keyboard{
+  color:#8D8DAA;
+}
+#reset{
+  color: white;
+  background-color: #8D8DAA !important ;
+  width: 40%;
+  margin-top: 4%;
+}
+img{
+  border: 2px dashed #DFDFDE;
+  margin-left: 20%;
+}
+#mistakes{
+color: red;
 }
