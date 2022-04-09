@@ -84,7 +84,7 @@ function guessedWord() {
 function updateMistakes() {
   document.getElementById('mistakes').innerHTML = mistakes;
 }
-/////////////////////reset the game///////////////////////
+/////////////////////replay the game///////////////////////
 function reset() {
   mistakes = 0;
   guessed = [];
